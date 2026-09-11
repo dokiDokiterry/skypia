@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url;
+  background-image: url("../fotos/background green.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -16,4 +16,13 @@ body {
   background-color: Canvas;
   color: CanvasText;
   color-scheme: light dark;
+}
+
+/* Mobiele weergave */
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-position: top center;
+    font-size: 90%;
+  }
 }
