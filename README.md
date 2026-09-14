@@ -6,13 +6,17 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ### 14 sept - Workshop
 
--zet hier foto van groepje opdracht
+- Bi-weekly groepsopdracht
+  ![biweeklyopdracht](assets/logafbeeldingen/biweeklyopdracht.jpeg)
 
-Opdracht 16: Tips lay-out in Duo's (Dewi)
-Meer Afbeeldingen toevoegen, alles staat al goed centreert. werken aan de lay-out
+<strong> Opdracht 16: Tips lay-out in Duo's (Dewi)<strong>
+Meer Afbeeldingen toevoegen, alles staat al goed centreert. Werken aan de lay-out
 
-Opdracht 17: Responsive voorbeelden (Rianne)
-![biweeklyopdracht](assets/logafbeeldingen/biweeklyopdracht.jpeg)
+<strong> Opdracht 17: Responsive voorbeelden (Rianne) <strong>
+
+1. Hover boven de makers is leuk interactief,
+2. Animaties naast de "Nominees".
+3. Goed gebruk van UI bij de knoppen.
 
 ### 7 sept - Workshop 1
 
