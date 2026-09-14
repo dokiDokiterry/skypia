@@ -8,6 +8,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 - Bi-weekly groepsopdracht
   ![biweeklyopdracht](assets/logafbeeldingen/biweeklyopdracht.jpeg)
+  ![biweeklyopdracht](assets/logafbeeldingen/bigeek.jpeg)
 
 <strong> Opdracht 16: Tips lay-out in Duo's (Dewi)</strong>
 Meer Afbeeldingen toevoegen, alles staat al goed centreert. Werken aan de lay-out
