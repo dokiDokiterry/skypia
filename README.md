@@ -15,7 +15,7 @@ Meer Afbeeldingen toevoegen, alles staat al goed centreert. Werken aan de lay-ou
 <strong> Opdracht 17: Responsive voorbeelden (Rianne) </strong>
 
 1. Als je het kleiner maakt wordt de header aan de linker kant een menu gemaakt
-2. UI design word minimaal gemaakt. Minder tekst meer afbeeldingen om het clickable te maken.
+2. UI design word minimaal gemaakt. Minder tekst meer knoppen om het clickable te maken.
 3. Alles word kleiner, maar de tekst en afbeeldingen worden juist groter, om het zo duidelijk mogelijk te behouden.
 
 ### 7 sept - Workshop 1
