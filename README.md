@@ -1,8 +1,4 @@
-# Model
-
-Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door studenten worden gemaakt.
-
-## Learning Log
+# Learning Log - Teresa
 
 ### 14 sept - Workshop
 
