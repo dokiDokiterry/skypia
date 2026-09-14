@@ -15,6 +15,14 @@ Meer Afbeeldingen toevoegen, alles staat al goed centreert. Werken aan de lay-ou
 2. UI design word minimaal gemaakt. Minder tekst meer knoppen om het clickable te maken.
 3. Alles word kleiner, maar de tekst en afbeeldingen worden juist groter, om het zo duidelijk mogelijk te behouden.
 
+<strong> Check-out met Tim & Rianne </strong>
+
+1. Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?: Waneer er alleen een html pagina hebt zonder css, met display grid en eigen content
+
+2. Vertel welke volgende stap je neemt om je website responsive te maken: Dat mijn header in klapt naar een menutje
+
+3. Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?: Ja, als ik de 6 onderwerpen erbij haal wel!
+
 ### 7 sept - Workshop 1
 
 -- wat ik heb gedaan:...
