@@ -18,11 +18,9 @@ body {
   color-scheme: light dark;
 }
 
-/* Mobiele weergave */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     background-attachment: scroll;
     background-position: top center;
     font-size: 90%;
-  }
-}
+  } */
