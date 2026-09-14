@@ -4,6 +4,16 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Learning Log
 
+### 14 sept - Workshop
+
+-zet hier foto van groepje opdracht
+
+Opdracht 16: Tips lay-out in Duo's (Dewi)
+Meer Afbeeldingen toevoegen, alles staat al goed centreert. werken aan de lay-out
+
+Opdracht 17: Responsive voorbeelden (Rianne)
+![biweeklyopdracht](assets/logafbeeldingen/biweeklyopdracht.jpeg)
+
 ### 7 sept - Workshop 1
 
 -- wat ik heb gedaan:...
