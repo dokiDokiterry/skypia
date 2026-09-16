@@ -11,12 +11,10 @@ body {
   grid-template-columns: 1;
   align-content: center;
   background: rgba(233, 67, 103, 0.83);
-  /* background-image: url("../fotos/background green.jpg"); */
-  /* background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed; */
-  font-family: "Comic Relief", system-ui;
+  font-family: "Comic Relief", system-ui; 
   color: CanvasText;
   color-scheme: light dark;
   justify-content: center;
@@ -28,6 +26,7 @@ body {
     color: black;
   }
 }
+
 
 /* @media (max-width: 768px) {
   body {
