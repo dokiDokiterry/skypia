@@ -1,5 +1,13 @@
 # Learning Log - Teresa
 
+### 16 sept - Workshop
+
+<strong> Check-out met Giel </strong>
+
+1. Noem 3 Gestalt- of Design principes op en laat de ander uitleggen wat ze betekenen en doen: Balans, visuele hierarchie en contrast.
+2. Een grid biedt ruimte om te spelen (vrijheid), maar tegelijkertijd ook eenheid en structuur (vastigheid). Wat wordt hiermee bedoeld?: Een soort bak waar je dingen in kna zetten, alleen je kan met ddie dingen oom mee 'spelen, zoals de elementen levendig maken en aanpassen.
+3. Welk principe neem je mee in een laatste iteratie van je eigen Garden?: Contast goed gebruiken en witruimte goed in delen.
+
 ### 14 sept - Workshop
 
 - Bi-weekly groepsopdracht
