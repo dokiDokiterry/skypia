@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "Comic Relief";
   src: url(../type/ComicRelief-Regular.woff2);
@@ -8,24 +7,18 @@
 
 body {
   display: grid;
-  grid-template-columns: 1;
-  align-content: center;
+  justify-items: center;
   background: rgba(233, 67, 103, 0.83);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed; */
-  font-family: "Comic Relief", system-ui; 
-  color: CanvasText;
-  color-scheme: light dark;
-  justify-content: center;
-  height: 100vh;
-  h1,
-  h2,
-  p {
-    color: black;
-  }
+  font-family: "Comic Relief", system-ui;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
+h1,
+h2,
+p {
+  color: black;
+}
 
 /* @media (max-width: 768px) {
   body {
