@@ -1,6 +1,13 @@
 # Learning Log - Teresa
 
+### 18 sept - Retrospective
+
 ### 16 sept - Workshop
+
+<strong> schetsen GRID </strong>
+![gridschetsen](assets/logafbeeldingen/gridschetsen.jpeg)
+![schets](assets/logafbeeldingen/schets.jpeg)
+![schetsdocent](assets/logafbeeldingen/schetsdocent.jpeg)
 
 <strong> Check-out met Giel </strong>
 
