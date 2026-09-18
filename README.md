@@ -5,6 +5,7 @@
 ### 16 sept - Workshop
 
 <strong> schetsen GRID & Idee </strong>
+
 ![gridschetsen](assets/logafbeeldingen/gridschetsen.jpeg)
 ![schets](assets/logafbeeldingen/schets.jpeg)
 ![schetsdocent](assets/logafbeeldingen/schetsdocent.jpeg)
