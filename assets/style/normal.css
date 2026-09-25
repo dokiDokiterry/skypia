@@ -21,10 +21,20 @@ p {
   color: black;
 }
 
+#pinkcd {
+  width: 65rem;
+  z-index: -1;
+  position: absolute;
+  top: 45%;
+  left: 16%;
+  transform: translate(-50%, -50%);
+
+}
+
 .circle-gallery {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;  
+  height: 25rem; 
   margin: 4rem auto;
 }
 
@@ -49,48 +59,44 @@ p {
 
 .img-circle img {
   position: absolute;
-  width: 28%;
-  height: auto;
+  top: 50%;
+  left: 50%;
+  width: 6rem;
+  height: 4.5rem;
+  margin: -2.25rem 0 0 -3rem;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 0.3125rem;
 }
 
-/* Op basis van advies/feedback van Justus voor het gebruik van position: absolute en img:nth , heb ik met behulp van AI 
-gekeken hoe ik het beste de transform en translate kon gebruiken!*/
+/* Op basis van advies/feedback van Justus voor het gebruik van position: absolute en img:nth,
+heb ik met behulp van AI gekeken hoe ik het beste de transform en translate kon gebruiken! */
 
-.img-circle img:nth-child(1) {
-  transform: translate(120px, 0px);
-}
-.img-circle img:nth-child(2) {
-  transform: translate(200px, 60px);
-}
-.img-circle img:nth-child(3) {
-  transform: translate(240px, 140px);
-}
-.img-circle img:nth-child(4) {
-  transform: translate(200px, 220px);
-}
-.img-circle img:nth-child(5) {
-  transform: translate(120px, 260px);
-}
-.img-circle img:nth-child(6) {
-  transform: translate(40px, 220px);
-}
-.img-circle img:nth-child(7) {
-  transform: translate(0px, 140px);
-}
-.img-circle img:nth-child(8) {
-  transform: translate(40px, 60px);
-}
+.img-circle img:nth-child(1) { transform: translate(0, -8rem); }
+.img-circle img:nth-child(2) { transform: translate(5.66rem, -5.66rem); }
+.img-circle img:nth-child(3) { transform: translate(8rem, 0); }
+.img-circle img:nth-child(4) { transform: translate(5.66rem, 5.66rem); }
+.img-circle img:nth-child(5) { transform: translate(0, 8rem); }
+.img-circle img:nth-child(6) { transform: translate(-5.66rem, 5.66rem); }
+.img-circle img:nth-child(7) { transform: translate(-8rem, 0); }
+.img-circle img:nth-child(8) { transform: translate(-5.66rem, -5.66rem); }
 
-@media (min-width: 768px) {
-  .circle-gallery {
-    width: 450px;
-    height: 450px;
+@media (min-width: 48rem) {
+
+  #pinkcd {
+    width: 90rem;
+    left: -55.5rem;
+    top: -25rem;
   }
 
-  .img-circle img {
-    width: 80px;
-    height: 80px;
-  }
 }
+  .img-circle img:nth-child(1) { transform: translate(0, -12rem); }
+  .img-circle img:nth-child(2) { transform: translate(8.49rem, -8.49rem); }
+  .img-circle img:nth-child(3) { transform: translate(12rem, 0); }
+  .img-circle img:nth-child(4) { transform: translate(8.49rem, 8.49rem); }
+  .img-circle img:nth-child(5) { transform: translate(0, 12rem); }
+  .img-circle img:nth-child(6) { transform: translate(-8.49rem, 8.49rem); }
+  .img-circle img:nth-child(7) { transform: translate(-12rem, 0); }
+  .img-circle img:nth-child(8) { transform: translate(-8.49rem, -8.49rem); }
+
+
+
