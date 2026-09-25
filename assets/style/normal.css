@@ -18,17 +18,17 @@ body {
 h1,
 h2,
 p {
+  
   color: black;
 }
 
 #pinkcd {
-  width: 65rem;
+  width: 32rem;
   z-index: -1;
   position: absolute;
-  top: 45%;
-  left: 17%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-
 }
 
 .circle-gallery {
@@ -42,7 +42,7 @@ p {
   position: absolute;
   z-index: 10;
   top: 50%;
-  left: 51%;
+  left: 50%;
   transform: translate(-50%, -50%);
   padding: 0.8rem 1.4rem;
   background: black;
@@ -80,15 +80,11 @@ heb ik met behulp van AI gekeken hoe ik het beste de transform en translate kon 
 .img-circle img:nth-child(7) { transform: translate(-8rem, 0); }
 .img-circle img:nth-child(8) { transform: translate(-5.66rem, -5.66rem); }
 
-@media (min-width: 48rem) {
-
+@media (min-width: 45rem) {
   #pinkcd {
-    width: 90rem;
-    left: -55.5rem;
-    top: -25rem;
+    width: 45rem;
   }
 
-}
   .img-circle img:nth-child(1) { transform: translate(0, -12rem); }
   .img-circle img:nth-child(2) { transform: translate(8.49rem, -8.49rem); }
   .img-circle img:nth-child(3) { transform: translate(12rem, 0); }
@@ -97,6 +93,5 @@ heb ik met behulp van AI gekeken hoe ik het beste de transform en translate kon 
   .img-circle img:nth-child(6) { transform: translate(-8.49rem, 8.49rem); }
   .img-circle img:nth-child(7) { transform: translate(-12rem, 0); }
   .img-circle img:nth-child(8) { transform: translate(-8.49rem, -8.49rem); }
-
-
+}
 
