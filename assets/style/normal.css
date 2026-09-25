@@ -26,7 +26,7 @@ p {
   z-index: -1;
   position: absolute;
   top: 45%;
-  left: 16%;
+  left: 17%;
   transform: translate(-50%, -50%);
 
 }
@@ -42,7 +42,7 @@ p {
   position: absolute;
   z-index: 10;
   top: 50%;
-  left: 50%;
+  left: 51%;
   transform: translate(-50%, -50%);
   padding: 0.8rem 1.4rem;
   background: black;
@@ -61,7 +61,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6rem;
+  width: 6.5rem;
   height: 4.5rem;
   margin: -2.25rem 0 0 -3rem;
   object-fit: cover;
