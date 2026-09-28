@@ -8,6 +8,7 @@
 body {
   display: grid;
   justify-items: center;
+  gap: 4rem;
   background: rgba(233, 67, 103, 0.83);
   font-family: "Comic Relief", system-ui;
   min-height: 100vh;
