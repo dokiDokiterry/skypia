@@ -20,28 +20,6 @@ html {
   /* Lettertypes */
   --font-script: "Yellowtail", cursive;
   --font-main: "Times New Roman", Times, serif;
-html {
-  /* Kleuren */
-  --brand-bg: #e0246e;
-  --brand-text: #000000;
-  --brand-line: #000000;
-  --brand-link: #000000;
-  --brand-accent: #f5e31c;
-  --brand-btn-bg: #141414;
-  --brand-btn-text: #f5e31c;
-
-  /* Witruimte */
-  --whitespace-xs: 0.5rem;
-  --whitespace-s: 1rem;
-  --whitespace-m: 2rem;
-
-  /* Rest */
-  --radius-s: 0.3125rem;
-  --border-thin: 0.0625rem;
-
-  /* Lettertypes */
-  --font-script: "Yellowtail", cursive;
-  --font-main: "Times New Roman", Times, serif;
 }
 
 
