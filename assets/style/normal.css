@@ -1,120 +1,292 @@
-@font-face {
-  font-family: "Comic Relief";
-  src: url(../type/ComicRelief-Regular.woff2);
-  font-weight: 400;
-  font-style: normal;
+html {
+  /* Kleuren */
+  --brand-bg: #e0246e;
+  --brand-text: #000000;
+  --brand-line: #000000;
+  --brand-link: #000000;
+  --brand-accent: #f5e31c;
+  --brand-btn-bg: #141414;
+  --brand-btn-text: #f5e31c;
+
+  /* Witruimte */
+  --whitespace-xs: 0.5rem;
+  --whitespace-s: 1rem;
+  --whitespace-m: 2rem;
+
+  /* Rest */
+  --radius-s: 0.3125rem;
+  --border-thin: 0.0625rem;
+
+  /* Lettertypes */
+  --font-script: "Yellowtail", cursive;
+  --font-main: "Times New Roman", Times, serif;
 }
+
 
 body {
   display: grid;
   justify-items: center;
-  gap: 4rem;
-  background: rgba(233, 67, 103, 0.83);
-  font-family: "Comic Relief", system-ui;
-  color: CanvasText;
-  color-scheme: light dark;
+  gap: var(--whitespace-m);
+  margin: 0;
+  background: var(--brand-bg);
+  font-family: var(--font-main);
+  font-size: 1.125rem;
+  color: var(--brand-text);
+  color-scheme: light;
 }
+
+/* Header */
 
 header {
   display: grid;
   justify-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: var(--whitespace-s);
+  padding: var(--whitespace-s) 0 0;
   width: 100%;
 }
+
+header h1 {
+  margin: 0;
+  font-family: var(--font-script);
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Nav */
 
 header nav {
   width: 100%;
-  border-top: 0.0625rem solid black;
-  border-bottom: 0.0625rem solid black;
-  padding: 0.5rem 2rem;
+  border-top: var(--border-thin) solid var(--brand-line);
+  border-bottom: var(--border-thin) solid var(--brand-line);
+  padding: var(--whitespace-xs) var(--whitespace-m);
+  box-sizing: border-box;
 }
 
 header nav ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   list-style: none;
-
 }
-
-header nav ul li:nth-child(1) { justify-self: start; }
-header nav ul li:nth-child(2) { justify-self: center; }
-header nav ul li:nth-child(3) { justify-self: end; }
 
 header nav ul li a {
+  color: var(--brand-link);
   text-decoration: none;
-  color: black;
-  line-height: 1;
+  text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0.1rem;
 }
 
-#pinkcd {
-  width: 32rem;
-  z-index: -1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+/* Hover en keyboard focus */
+
+header nav ul li a:hover,
+header nav ul li a:focus-visible {
+  text-decoration: underline;
+}
+
+/* Cirkel met foto's + boogje*/
+
+main {
+  display: grid;
+  justify-items: center;
 }
 
 .circle-gallery {
   position: relative;
-  width: 18.75rem;  
-  height: 25rem; 
-}
-.center-btn {
-  position: absolute;
-  z-index: 10;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.8rem 1.4rem;
-  background: black;
-  color: white;
-  border-radius: 50%;
-  border: none;
+  width: 21rem;
+  height: 21rem;
+  margin-top: 3rem;
 }
 
-.img-circle {
-  position: relative;
+/*tekst in boogje */
+
+.arc-text {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
+
+.arc-text svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.arc-text text {
+  font-family: var(--font-main);
+  font-size: 7.5px;
+  letter-spacing: 0.8px;
+  fill: var(--brand-text);
+}
+
+/* Verborgen heading */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*De cd in het midden*/
+
+#pinkcd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+/*Foto's rondom de cd*/
 
 .img-circle img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 6.5rem;
+  width: 6rem;
   height: 4.5rem;
   margin: -2.25rem 0 0 -3rem;
   object-fit: cover;
-  border-radius: 0.3125rem;
+  border-radius: var(--radius-s);
 }
 
 /* Op basis van advies/feedback van Justus voor het gebruik van position: absolute en img:nth,
 heb ik met behulp van AI gekeken hoe ik het beste de transform en translate kon gebruiken! */
 
-.img-circle img:nth-child(1) { transform: translate(0, -8rem); }
-.img-circle img:nth-child(2) { transform: translate(5.66rem, -5.66rem); }
-.img-circle img:nth-child(3) { transform: translate(8rem, 0); }
-.img-circle img:nth-child(4) { transform: translate(5.66rem, 5.66rem); }
-.img-circle img:nth-child(5) { transform: translate(0, 8rem); }
-.img-circle img:nth-child(6) { transform: translate(-5.66rem, 5.66rem); }
-.img-circle img:nth-child(7) { transform: translate(-8rem, 0); }
-.img-circle img:nth-child(8) { transform: translate(-5.66rem, -5.66rem); }
-
-@media (min-width: 45rem) {
-  #pinkcd {
-    width: 45rem;
-  }
-
-  .img-circle img:nth-child(1) { transform: translate(0, -12rem); }
-  .img-circle img:nth-child(2) { transform: translate(8.49rem, -8.49rem); }
-  .img-circle img:nth-child(3) { transform: translate(12rem, 0); }
-  .img-circle img:nth-child(4) { transform: translate(8.49rem, 8.49rem); }
-  .img-circle img:nth-child(5) { transform: translate(0, 12rem); }
-  .img-circle img:nth-child(6) { transform: translate(-8.49rem, 8.49rem); }
-  .img-circle img:nth-child(7) { transform: translate(-12rem, 0); }
-  .img-circle img:nth-child(8) { transform: translate(-8.49rem, -8.49rem); }
+.img-circle img:nth-child(1) {
+  transform: translate(0, -7rem);
 }
 
+.img-circle img:nth-child(2) {
+  transform: translate(4.95rem, -4.95rem);
+}
+
+.img-circle img:nth-child(3) {
+  transform: translate(7rem, 0);
+}
+
+.img-circle img:nth-child(4) {
+  transform: translate(4.95rem, 4.95rem);
+}
+
+.img-circle img:nth-child(5) {
+  transform: translate(0, 7rem);
+}
+
+.img-circle img:nth-child(6) {
+  transform: translate(-4.95rem, 4.95rem);
+}
+
+.img-circle img:nth-child(7) {
+  transform: translate(-7rem, 0);
+}
+
+.img-circle img:nth-child(8) {
+  transform: translate(-4.95rem, -4.95rem);
+}
+
+/* Zwarte button */
+
+.center-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6rem;
+  height: 3.5rem;
+  transform: translate(-50%, -50%);
+
+  background: var(--brand-btn-bg);
+  color: var(--brand-btn-text);
+
+  border: none;
+  border-radius: 50%;
+
+  font-family: var(--font-script);
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+/* Hover */
+
+.center-btn:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Keyboard focus */
+
+.center-btn:focus-visible {
+  outline: 0.1875rem solid var(--brand-accent);
+  outline-offset: 0.25rem;
+}
+
+/* Footer */
+
+footer {
+  padding-bottom: var(--whitespace-s);
+}
+
+/* Desktop */
+
+@media (min-width: 45rem) {
+  .circle-gallery {
+    width: 37rem;
+    height: 37rem;
+    margin-top: 4rem;
+  }
+
+  .img-circle img {
+    width: 10rem;
+    height: 7.5rem;
+    margin: -3.75rem 0 0 -5rem;
+  }
+
+  .img-circle img:nth-child(1) {
+    transform: translate(0, -13rem);
+  }
+
+  .img-circle img:nth-child(2) {
+    transform: translate(9.19rem, -9.19rem);
+  }
+
+  .img-circle img:nth-child(3) {
+    transform: translate(13rem, 0);
+  }
+
+  .img-circle img:nth-child(4) {
+    transform: translate(9.19rem, 9.19rem);
+  }
+
+  .img-circle img:nth-child(5) {
+    transform: translate(0, 13rem);
+  }
+
+  .img-circle img:nth-child(6) {
+    transform: translate(-9.19rem, 9.19rem);
+  }
+
+  .img-circle img:nth-child(7) {
+    transform: translate(-13rem, 0);
+  }
+
+  .img-circle img:nth-child(8) {
+    transform: translate(-9.19rem, -9.19rem);
+  }
+
+  .center-btn {
+    width: 8rem;
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+}

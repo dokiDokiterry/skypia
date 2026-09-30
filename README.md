@@ -2,6 +2,10 @@
 
 ### 18 sept - Retrospective
 
+Je bent vastgelopen omdat je een te lastig idee had. Probeer de volgende sprint de opdracht klein te houden. Ga de Deep Dives inhalen,. jouw Learning Log bijwerken en een versimpelde (responsive) versie maken van jouw garden waarin je ook een light/dark theme toepast en custom properties gebruikt.
+Laten we maandag even samen zitten en kijken hoe je komende sprints kan aanpakken en het werk kan inhalen.
+
+Charley en Kate
 ### 16 sept - Workshop
 
 <strong> schetsen GRID & Idee </strong>
