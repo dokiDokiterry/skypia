@@ -20,12 +20,41 @@ html {
   /* Lettertypes */
   --font-script: "Yellowtail", cursive;
   --font-main: "Times New Roman", Times, serif;
+html {
+  /* Kleuren */
+  --brand-bg: #e0246e;
+  --brand-text: #000000;
+  --brand-line: #000000;
+  --brand-link: #000000;
+  --brand-accent: #f5e31c;
+  --brand-btn-bg: #141414;
+  --brand-btn-text: #f5e31c;
+
+  /* Witruimte */
+  --whitespace-xs: 0.5rem;
+  --whitespace-s: 1rem;
+  --whitespace-m: 2rem;
+
+  /* Rest */
+  --radius-s: 0.3125rem;
+  --border-thin: 0.0625rem;
+
+  /* Lettertypes */
+  --font-script: "Yellowtail", cursive;
+  --font-main: "Times New Roman", Times, serif;
 }
 
 
 body {
   display: grid;
   justify-items: center;
+  gap: var(--whitespace-m);
+  margin: 0;
+  background: var(--brand-bg);
+  font-family: var(--font-main);
+  font-size: 1.125rem;
+  color: var(--brand-text);
+  color-scheme: light;
   gap: var(--whitespace-m);
   margin: 0;
   background: var(--brand-bg);
@@ -40,6 +69,8 @@ body {
 header {
   display: grid;
   justify-items: center;
+  gap: var(--whitespace-s);
+  padding: var(--whitespace-s) 0 0;
   gap: var(--whitespace-s);
   padding: var(--whitespace-s) 0 0;
   width: 100%;
@@ -62,9 +93,17 @@ header nav {
   border-bottom: var(--border-thin) solid var(--brand-line);
   padding: var(--whitespace-xs) var(--whitespace-m);
   box-sizing: border-box;
+  border-top: var(--border-thin) solid var(--brand-line);
+  border-bottom: var(--border-thin) solid var(--brand-line);
+  padding: var(--whitespace-xs) var(--whitespace-m);
+  box-sizing: border-box;
 }
 
 header nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -73,6 +112,7 @@ header nav ul {
 }
 
 header nav ul li a {
+  color: var(--brand-link);
   color: var(--brand-link);
   text-decoration: none;
   text-underline-offset: 0.2rem;
@@ -95,6 +135,9 @@ main {
 
 .circle-gallery {
   position: relative;
+  width: 21rem;
+  height: 21rem;
+  margin-top: 3rem;
   width: 21rem;
   height: 21rem;
   margin-top: 3rem;
@@ -145,6 +188,7 @@ main {
   top: 50%;
   left: 50%;
   width: 100%;
+  width: 100%;
   transform: translate(-50%, -50%);
 }
 
@@ -155,14 +199,15 @@ main {
   top: 50%;
   left: 50%;
   width: 6rem;
+  width: 6rem;
   height: 4.5rem;
   margin: -2.25rem 0 0 -3rem;
   object-fit: cover;
   border-radius: var(--radius-s);
+  border-radius: var(--radius-s);
 }
 
-/* Op basis van advies/feedback van Justus voor het gebruik van position: absolute en img:nth,
-heb ik met behulp van AI gekeken hoe ik het beste de transform en translate kon gebruiken! */
+/* Elke foto krijgt een eigen plek */
 
 .img-circle img:nth-child(1) {
   transform: translate(0, -7rem);
@@ -250,8 +295,56 @@ footer {
     width: 10rem;
     height: 7.5rem;
     margin: -3.75rem 0 0 -5rem;
+  .circle-gallery {
+    width: 37rem;
+    height: 37rem;
+    margin-top: 4rem;
   }
 
+  .img-circle img {
+    width: 10rem;
+    height: 7.5rem;
+    margin: -3.75rem 0 0 -5rem;
+  }
+
+  .img-circle img:nth-child(1) {
+    transform: translate(0, -13rem);
+  }
+
+  .img-circle img:nth-child(2) {
+    transform: translate(9.19rem, -9.19rem);
+  }
+
+  .img-circle img:nth-child(3) {
+    transform: translate(13rem, 0);
+  }
+
+  .img-circle img:nth-child(4) {
+    transform: translate(9.19rem, 9.19rem);
+  }
+
+  .img-circle img:nth-child(5) {
+    transform: translate(0, 13rem);
+  }
+
+  .img-circle img:nth-child(6) {
+    transform: translate(-9.19rem, 9.19rem);
+  }
+
+  .img-circle img:nth-child(7) {
+    transform: translate(-13rem, 0);
+  }
+
+  .img-circle img:nth-child(8) {
+    transform: translate(-9.19rem, -9.19rem);
+  }
+
+  .center-btn {
+    width: 8rem;
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+}
   .img-circle img:nth-child(1) {
     transform: translate(0, -13rem);
   }
