@@ -1,98 +1,174 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Teresa" />
-    <meta name="color-scheme" content="light" />
 
-    ```
-    <title>SKYPIA</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Teresa">
+  <meta name="color-scheme" content="light dark">
 
-    <!-- Yellowtail font, rechtstreeks van Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap"
-      rel="stylesheet"
-    />
+  <title>SKYPIA</title>
 
-    <link rel="stylesheet" href="./assets/style/normal.css" />
-    ```
-  </head>
+  <link rel="stylesheet" href="./assets/style/normal.css">
+</head>
 
-  <body>
-    <header>
+<body>
+
+  <header>
+
+    <div class="header-top">
+
       <h1>teresaarchive</h1>
 
-      ```
-      <nav aria-label="Hoofdnavigatie">
-        <ul>
-          <li><a href="/readme.html">Readme</a></li>
-          <li><a href="/links.html">Links</a></li>
-          <li><a href="/aboutme.html">About me</a></li>
-        </ul>
-      </nav>
-    </header>
+<button class="theme-toggle" type="button">
+  <img
+    src="assets/fotos/dans-light.png"
+    alt="Thema toggle"
+  >
+</button>
 
-    <main>
-      <section class="circle-gallery">
-        <!-- Decoratieve cd -->
+    </div>
+
+    <nav>
+      <ul>
+
+        <li>
+          <a href="/readme.html">Readme</a>
+        </li>
+
+        <li>
+          <a href="/links.html">Links</a>
+        </li>
+
+        <li>
+          <a href="/aboutme.html">About me</a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+    <section class="circle-gallery">
+
+      <h2 class="visually-hidden">
+        Neem een kijkje in mijn skypia
+      </h2>
+
+
+      <picture>
+
+        <source
+          id="dark-cd"
+          srcset="assets/fotos/pinkcd.png"
+          media="not all"
+        >
+
         <img
-          id="pinkcd"
+          id="plaat"
           src="assets/fotos/plaat.png"
-          alt=""
-          aria-hidden="true"
-        />
+        >
 
-        <!-- Toegankelijke heading voor screenreaders -->
-        <h2 class="visually-hidden">Neem een kijkje in mijn skypia</h2>
+      </picture>
 
-        <!-- Boogtekst is alleen visueel -->
-        <div class="arc-text" aria-hidden="true">
-          <svg viewBox="0 0 100 100">
-            <path id="boog" d="M -4 50 A 54 54 0 0 1 104 50" fill="none" />
 
-            <text>
-              <textPath href="#boog" startOffset="50%" text-anchor="middle">
-                Neem een kijkje in mijn skypia
-              </textPath>
-            </text>
-          </svg>
-        </div>
+      <!--
+        Voor deze SVG-boog heb ik ChatGPT om uitleg gevraagd.
+        De cijfers in de path-code zijn nodig om de vorm van de boog
+        te bepalen. Ik heb de code daarna gebruikt en aangepast
+        voor mijn eigen ontwerp.
+      -->
 
-        <div class="img-circle">
-          <img src="assets/fotos/miso 1.jpeg" alt="Foto van Miso" />
+      <div class="arc-text">
 
-          <img src="assets/fotos/danssfeer.jpeg" alt="Foto met een danssfeer" />
+        <svg viewBox="0 0 100 100">
 
-          <img src="assets/fotos/miso.jpeg" alt="Foto van Miso" />
+          <path
+            id="boog"
+            d="M -4 50 A 54 54 0 0 1 104 50"
+            fill="none"
+          ></path>
 
-          <img src="assets/fotos/drum.jpeg" alt="Foto van een drum" />
+          <text>
 
-          <img
-            src="assets/fotos/freebird.jpg"
-            alt="Foto met de naam Freebird"
-          />
+            <textPath
+              href="#boog"
+              startOffset="50%"
+              text-anchor="middle"
+            >
+              Neem een kijkje in mijn skypia
+            </textPath>
 
-          <img src="assets/fotos/miso 2.jpeg" alt="Tweede foto van Miso" />
+          </text>
 
-          <img src="assets/fotos/gnarly.jpg" alt="Foto met de naam Gnarly" />
+        </svg>
 
-          <img
-            src="assets/fotos/cubavlag.jpeg"
-            alt="Foto van de Cubaanse vlag"
-          />
-        </div>
+      </div>
 
-        <button class="center-btn" type="button">Click me</button>
-      </section>
-    </main>
 
-    <footer>
-      <p>teresaarchive</p>
-    </footer>
-    ```
-  </body>
+      <div class="img-circle">
+
+        <img
+          src="assets/fotos/miso 1.jpeg"
+          alt="Miso XG dans cover foto"
+        >
+
+        <img
+          src="assets/fotos/danssfeer.jpeg"
+          alt="Foto van cubaanse danseres"
+        >
+
+        <img
+          src="assets/fotos/miso.jpeg"
+          alt="Foto van Miso optreden bij Embassade festival in Den haag"
+        >
+
+        <img
+          src="assets/fotos/drum.jpeg"
+          alt="Foto van een Drummer"
+        >
+
+        <img
+          src="assets/fotos/freebird.jpg"
+          alt="Foto van een Vrijheids Vogel"
+        >
+
+        <img
+          src="assets/fotos/miso 2.jpeg"
+          alt="Foto van Miso Blush dans cover op de Dam"
+        >
+
+        <img
+          src="assets/fotos/gnarly.jpg"
+          alt="Miso Gnarly dans cover foto"
+        >
+
+        <img
+          src="assets/fotos/cubavlag.jpeg"
+          alt="Foto van de Cubaanse vlag"
+        >
+
+      </div>
+
+
+      <button class="center-btn" type="button">
+        Click me
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>teresaarchive</p>
+  </footer>
+
+
+  <script src="assets/script/theme.js"></script>
+
+</body>
 </html>

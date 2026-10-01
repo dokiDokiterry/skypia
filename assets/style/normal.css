@@ -1,5 +1,17 @@
+/* MARK: Font */
+
+@font-face {
+  font-family: "Yellowtail";
+  src: url("../Yellowtail-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* MARK: theme light */
+
 html {
-  /* Kleuren */
   --brand-bg: #e0246e;
   --brand-text: #000000;
   --brand-line: #000000;
@@ -8,54 +20,102 @@ html {
   --brand-btn-bg: #141414;
   --brand-btn-text: #f5e31c;
 
-  /* Witruimte */
   --whitespace-xs: 0.5rem;
   --whitespace-s: 1rem;
   --whitespace-m: 2rem;
 
-  /* Rest */
   --radius-s: 0.3125rem;
   --border-thin: 0.0625rem;
 
-  /* Lettertypes */
   --font-script: "Yellowtail", cursive;
   --font-main: "Times New Roman", Times, serif;
+
+  color-scheme: light dark;
+  font-size: 100%;
 }
 
+
+/* MARK: theme dark */
+
+@media (prefers-color-scheme: dark) {
+
+  html {
+    --brand-bg: #000000;
+    --brand-text: #ffffff;
+    --brand-line: #ffffff;
+    --brand-link: #ffffff;
+    --brand-accent: #e0246e;
+    --brand-btn-bg: #ffffff;
+    --brand-btn-text: #000000;
+  }
+
+}
+
+
+html[data-theme="dark"] {
+  --brand-bg: #000000;
+  --brand-text: #ffffff;
+  --brand-line: #ffffff;
+  --brand-link: #ffffff;
+  --brand-accent: #e0246e;
+  --brand-btn-bg: #ffffff;
+  --brand-btn-text: #000000;
+}
+
+
+html[data-theme="light"] {
+  --brand-bg: #e0246e;
+  --brand-text: #000000;
+  --brand-line: #000000;
+  --brand-link: #000000;
+  --brand-accent: #f5e31c;
+  --brand-btn-bg: #141414;
+  --brand-btn-text: #f5e31c;
+}
+
+
+/* MARK: Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* MARK: Body */
 
 body {
   display: grid;
   justify-items: center;
   gap: var(--whitespace-m);
+
   margin: 0;
+  min-height: 100vh;
+
   background: var(--brand-bg);
+  color: var(--brand-text);
+
   font-family: var(--font-main);
   font-size: 1.125rem;
-  color: var(--brand-text);
-  color-scheme: light;
-  gap: var(--whitespace-m);
-  margin: 0;
-  background: var(--brand-bg);
-  font-family: var(--font-main);
-  font-size: 1.125rem;
-  color: var(--brand-text);
-  color-scheme: light;
 }
 
-/* Header */
+
+/* MARK: Header */
 
 header {
   display: grid;
   justify-items: center;
   gap: var(--whitespace-s);
-  padding: var(--whitespace-s) 0 0;
-  gap: var(--whitespace-s);
-  padding: var(--whitespace-s) 0 0;
+
   width: 100%;
+  padding: var(--whitespace-s) var(--whitespace-s) 0;
 }
+
 
 header h1 {
   margin: 0;
+
   font-family: var(--font-script);
   font-size: 4rem;
   font-weight: 400;
@@ -63,176 +123,279 @@ header h1 {
   text-align: center;
 }
 
-/* Nav */
+
+/* MARK: Header top */
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  width: 100%;
+}
+
+
+/* MARK: Thema toggle */
+
+.theme-toggle {
+  position: absolute;
+
+  top: 50%;
+  right: 0.5rem;
+
+  width: 3.5rem;
+  height: 3.5rem;
+
+  padding: 0;
+
+  transform: translateY(-50%);
+
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+
+.theme-toggle img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+}
+
+
+/* MARK: Nav */
 
 header nav {
   width: 100%;
+
+  padding: var(--whitespace-xs) var(--whitespace-m);
+
   border-top: var(--border-thin) solid var(--brand-line);
   border-bottom: var(--border-thin) solid var(--brand-line);
-  padding: var(--whitespace-xs) var(--whitespace-m);
-  box-sizing: border-box;
-  border-top: var(--border-thin) solid var(--brand-line);
-  border-bottom: var(--border-thin) solid var(--brand-line);
-  padding: var(--whitespace-xs) var(--whitespace-m);
-  box-sizing: border-box;
 }
+
 
 header nav ul {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  gap: var(--whitespace-s);
+
+  width: 100%;
+  max-width: 60rem;
+
+  margin: 0 auto;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
+
   list-style: none;
 }
 
-header nav ul li a {
+
+header nav li {
+  margin: 0;
+  padding: 0;
+}
+
+
+header nav a {
   color: var(--brand-link);
-  color: var(--brand-link);
+
   text-decoration: none;
   text-underline-offset: 0.2rem;
   text-decoration-thickness: 0.1rem;
 }
 
-/* Hover en keyboard focus */
 
-header nav ul li a:hover,
-header nav ul li a:focus-visible {
+header nav a:hover,
+header nav a:focus-visible {
   text-decoration: underline;
 }
 
-/* Cirkel met foto's + boogje*/
+
+/* MARK: Main */
 
 main {
   display: grid;
   justify-items: center;
+
+  width: 100%;
 }
+
+
+/* MARK: Circle gallery */
 
 .circle-gallery {
   position: relative;
+
   width: 21rem;
   height: 21rem;
-  margin-top: 3rem;
-  width: 21rem;
-  height: 21rem;
+
   margin-top: 3rem;
 }
 
-/*tekst in boogje */
+
+/* MARK: arc tekst (boogje) */
 
 .arc-text {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+
   width: 100%;
   height: 100%;
+
   pointer-events: none;
 }
+
 
 .arc-text svg {
   width: 100%;
   height: 100%;
+
   overflow: visible;
 }
 
+
 .arc-text text {
   font-family: var(--font-main);
-  font-size: 7.5px;
-  letter-spacing: 0.8px;
+  font-size: 0.46875rem;
+  letter-spacing: 0.05rem;
+
   fill: var(--brand-text);
 }
 
-/* Verborgen heading */
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+
+  width: 0.0625rem;
+  height: 0.0625rem;
+
   padding: 0;
-  margin: -1px;
+  margin: -0.0625rem;
+
   overflow: hidden;
+
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+
   border: 0;
 }
 
-/*De cd in het midden*/
 
-#pinkcd {
+/* MARK: CD */
+
+.circle-gallery picture {
   position: absolute;
+
   top: 50%;
   left: 50%;
+
   width: 100%;
-  width: 100%;
+
   transform: translate(-50%, -50%);
 }
 
-/*Foto's rondom de cd*/
+
+#plaat {
+  width: 100%;
+}
+
+
+/* MARK: Eigen IMG */
 
 .img-circle img {
   position: absolute;
+
   top: 50%;
   left: 50%;
-  width: 6rem;
+
   width: 6rem;
   height: 4.5rem;
+
   margin: -2.25rem 0 0 -3rem;
+
   object-fit: cover;
-  border-radius: var(--radius-s);
+
   border-radius: var(--radius-s);
 }
 
-/* Elke foto krijgt een eigen plek */
+
+/* MARK: Miso XG */
 
 .img-circle img:nth-child(1) {
   transform: translate(0, -7rem);
 }
 
+
+/* MARK: Cubaanse danser */
+
 .img-circle img:nth-child(2) {
   transform: translate(4.95rem, -4.95rem);
 }
+
+
+/* MARK: Miso Embassade */
 
 .img-circle img:nth-child(3) {
   transform: translate(7rem, 0);
 }
 
+
+/* MARK: Drummer */
+
 .img-circle img:nth-child(4) {
   transform: translate(4.95rem, 4.95rem);
 }
+
+
+/* MARK: Vogel */
 
 .img-circle img:nth-child(5) {
   transform: translate(0, 7rem);
 }
 
+
+/* MARK: Miso op de Dam */
+
 .img-circle img:nth-child(6) {
   transform: translate(-4.95rem, 4.95rem);
 }
+
+
+/* MARK: Miso Gnarly */
 
 .img-circle img:nth-child(7) {
   transform: translate(-7rem, 0);
 }
 
+
+/* MARK: Cuba vlag */
+
 .img-circle img:nth-child(8) {
   transform: translate(-4.95rem, -4.95rem);
 }
 
-/* Zwarte button */
+
+/* MARK: Button */
 
 .center-btn {
   position: absolute;
+
   top: 50%;
   left: 50%;
+
   width: 6rem;
   height: 3.5rem;
+
   transform: translate(-50%, -50%);
 
   background: var(--brand-btn-bg);
   color: var(--brand-btn-text);
 
-  border: none;
+  border: 0;
   border-radius: 50%;
 
   font-family: var(--font-script);
@@ -241,123 +404,95 @@ main {
   cursor: pointer;
 }
 
-/* Hover */
 
 .center-btn:hover {
   transform: translate(-50%, -50%) scale(1.05);
 }
 
-/* Keyboard focus */
 
 .center-btn:focus-visible {
   outline: 0.1875rem solid var(--brand-accent);
   outline-offset: 0.25rem;
 }
 
-/* Footer */
+
+/* MARK: Footer */
 
 footer {
   padding-bottom: var(--whitespace-s);
 }
 
-/* Desktop */
+
+footer p {
+  margin: 0;
+}
+
+
+/* MARK: Desktop */
 
 @media (min-width: 45rem) {
+
   .circle-gallery {
     width: 37rem;
     height: 37rem;
+
     margin-top: 4rem;
   }
+
 
   .img-circle img {
     width: 10rem;
     height: 7.5rem;
+
     margin: -3.75rem 0 0 -5rem;
-  .circle-gallery {
-    width: 37rem;
-    height: 37rem;
-    margin-top: 4rem;
   }
 
-  .img-circle img {
-    width: 10rem;
-    height: 7.5rem;
-    margin: -3.75rem 0 0 -5rem;
-  }
 
   .img-circle img:nth-child(1) {
     transform: translate(0, -13rem);
   }
 
-  .img-circle img:nth-child(2) {
-    transform: translate(9.19rem, -9.19rem);
-  }
-
-  .img-circle img:nth-child(3) {
-    transform: translate(13rem, 0);
-  }
-
-  .img-circle img:nth-child(4) {
-    transform: translate(9.19rem, 9.19rem);
-  }
-
-  .img-circle img:nth-child(5) {
-    transform: translate(0, 13rem);
-  }
-
-  .img-circle img:nth-child(6) {
-    transform: translate(-9.19rem, 9.19rem);
-  }
-
-  .img-circle img:nth-child(7) {
-    transform: translate(-13rem, 0);
-  }
-
-  .img-circle img:nth-child(8) {
-    transform: translate(-9.19rem, -9.19rem);
-  }
-
-  .center-btn {
-    width: 8rem;
-    height: 4.5rem;
-    font-size: 2rem;
-  }
-}
-  .img-circle img:nth-child(1) {
-    transform: translate(0, -13rem);
-  }
 
   .img-circle img:nth-child(2) {
     transform: translate(9.19rem, -9.19rem);
   }
 
+
   .img-circle img:nth-child(3) {
     transform: translate(13rem, 0);
   }
+
 
   .img-circle img:nth-child(4) {
     transform: translate(9.19rem, 9.19rem);
   }
 
+
   .img-circle img:nth-child(5) {
     transform: translate(0, 13rem);
   }
+
 
   .img-circle img:nth-child(6) {
     transform: translate(-9.19rem, 9.19rem);
   }
 
+
   .img-circle img:nth-child(7) {
     transform: translate(-13rem, 0);
   }
+
 
   .img-circle img:nth-child(8) {
     transform: translate(-9.19rem, -9.19rem);
   }
 
+
   .center-btn {
     width: 8rem;
     height: 4.5rem;
+
     font-size: 2rem;
   }
+
 }
