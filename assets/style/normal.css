@@ -148,6 +148,19 @@ html[data-theme="light"] {
 }
 
 
+/* MARK: Mobile overflow
+*/
+
+html,
+body {
+
+  max-width: 100%;
+
+  overflow-x: hidden;
+
+}
+
+
 /* MARK: Body
 */
 
@@ -186,6 +199,7 @@ body {
 
   left: -9999px;
 
+
   padding: 0.5rem 1rem;
 
 
@@ -201,6 +215,7 @@ body {
   left: 1rem;
 
   top: 1rem;
+
 
   z-index: 1000;
 
@@ -392,7 +407,7 @@ header nav a {
   color: var(--brand-link);
 
 
-  text-decoration: none;
+  text-decoration: underline;
 
   text-underline-offset: 0.2rem;
 
@@ -899,6 +914,7 @@ footer p {
 
     width: calc(100% - 4rem);
 
+
     box-shadow: 0.3rem 0.3rem 0 var(--brand-line);
 
   }
@@ -937,6 +953,31 @@ footer p {
   .cookie-dialog button {
 
     width: 100%;
+
+  }
+
+}
+
+
+/* MARK: Mobile navigatie
+*/
+
+@media (max-width: 44.999rem) {
+
+  header nav {
+
+    padding: var(--whitespace-xs) 0.5rem;
+
+  }
+
+
+  header nav ul {
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 0.75rem;
 
   }
 
@@ -1146,13 +1187,4 @@ footer p {
 
   }
 
-}
-
-/* MARK: Mobile 
-*/
-
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
