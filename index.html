@@ -14,6 +14,39 @@
 
 <body>
 
+  <a class="skip-link" href="#main-content">
+    Ga naar inhoud
+  </a>
+
+  <dialog class="cookie-dialog">
+
+    <div class="cookie-content">
+
+      <h2>Cookies komen er altijd bij...</h2>
+
+      <p>
+        teresaarchive.nl gebruikt cookies. Deze website maakt ook gebruik
+        van een externe component van Digitaal Tuintje. Wanneer cookies
+        worden geaccepteerd, kan informatie worden verzonden naar
+        digitaaltuintje.nl. Wil je de cookies accepteren?
+      </p>
+
+      <form method="dialog">
+
+        <button type="submit">
+          Accept
+        </button>
+
+        <button type="submit">
+          Reject
+        </button>
+
+      </form>
+
+    </div>
+
+  </dialog>
+
   <header>
 
     <div class="header-top">
@@ -33,15 +66,25 @@
       <ul>
 
         <li>
-          <a href="/readme.html">Readme</a>
+          <a href="index.html">Home</a>
         </li>
 
         <li>
-          <a href="/links.html">Links</a>
+          <a href="https://github.com/dokiDokiterry/skypia/blob/main/README.md">
+            Readme
+          </a>
         </li>
 
         <li>
-          <a href="/aboutme.html">About me</a>
+          <a href="links.html">Links</a>
+        </li>
+
+        <li>
+          <a href="afbeeldingen.html">Afbeeldingen</a>
+        </li>
+
+        <li>
+          <a href="aboutme.html">About me</a>
         </li>
 
       </ul>
@@ -49,8 +92,7 @@
 
   </header>
 
-
-  <main>
+  <main id="main-content">
 
     <section class="circle-gallery">
 
@@ -69,10 +111,10 @@
         <img
           id="plaat"
           src="assets/fotos/plaat.png"
+          alt="CD"
         >
 
       </picture>
-
 
       <!--
         Voor deze SVG-boog heb ik ChatGPT om uitleg gevraagd.
@@ -92,6 +134,7 @@
           ></path>
 
           <text>
+
             <textPath
               href="#boog"
               startOffset="50%"
@@ -99,12 +142,12 @@
             >
               Neem een kijkje in mijn skypia
             </textPath>
+
           </text>
 
         </svg>
 
       </div>
-
 
       <div class="img-circle">
 
@@ -115,22 +158,22 @@
 
         <img
           src="assets/fotos/danssfeer.jpeg"
-          alt="Foto van cubaanse danseres"
+          alt="Foto van Cubaanse danseres"
         >
 
         <img
           src="assets/fotos/miso.jpeg"
-          alt="Foto van Miso optreden bij Embassade festival in Den haag"
+          alt="Foto van Miso tijdens een optreden bij het ambassade festival in Den Haag"
         >
 
         <img
           src="assets/fotos/drum.jpeg"
-          alt="Foto van een Drummer"
+          alt="Foto van een drummer"
         >
 
         <img
           src="assets/fotos/freebird.jpg"
-          alt="Foto van een Vrijheids Vogel"
+          alt="Foto van een vrijheidsvogel"
         >
 
         <img
@@ -150,7 +193,6 @@
 
       </div>
 
-
       <button class="center-btn" type="button">
         Click me
       </button>
@@ -159,13 +201,12 @@
 
   </main>
 
-
   <footer>
     <p>teresaarchive</p>
   </footer>
 
-
   <script src="assets/script/theme.js"></script>
 
 </body>
+
 </html>
