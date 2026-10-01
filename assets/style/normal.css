@@ -897,8 +897,7 @@ footer p {
 
   .cookie-dialog {
 
-    width: calc(100% - 2rem);
-
+    width: calc(100% - 4rem);
 
     box-shadow: 0.3rem 0.3rem 0 var(--brand-line);
 
@@ -907,21 +906,21 @@ footer p {
 
   .cookie-content {
 
-    padding: 1.25rem;
+    padding: 1rem;
 
   }
 
 
   .cookie-dialog h2 {
 
-    font-size: 2rem;
+    font-size: 1.7rem;
 
   }
 
 
   .cookie-dialog p {
 
-    font-size: 1rem;
+    font-size: 0.9rem;
 
   }
 
@@ -1147,4 +1146,13 @@ footer p {
 
   }
 
+}
+
+/* MARK: Mobile 
+*/
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
