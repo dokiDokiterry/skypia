@@ -44,17 +44,18 @@ themeToggle.addEventListener("click", function () {
 });
 
 /* MARK: Cookie dialog
- */
+*/
 
-if (cookieDialog) {
+const cookieDialog = document.querySelector(".cookie-dialog");
+
+if (cookieDialog && !cookieDialog.open) {
   cookieDialog.showModal();
 }
 
 /* MARK: Foto's draaien
- */
+*/
 
 const button = document.querySelector(".center-btn");
-
 const images = document.querySelector(".img-circle");
 
 if (button && images) {
