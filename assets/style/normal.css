@@ -1,5 +1,5 @@
-/* MARK: Font
-*/
+
+/* MARK: Font */
 
 @font-face {
   font-family: "Yellowtail";
@@ -9,9 +9,7 @@
   font-display: swap;
 }
 
-
-/* MARK: theme light
-*/
+/* MARK: theme light */
 
 html {
   --brand-bg: #e0246e;
@@ -37,9 +35,7 @@ html {
   font-size: 100%;
 }
 
-
-/* MARK: theme dark
-*/
+/* MARK: theme dark */
 
 @media (prefers-color-scheme: dark) {
   html {
@@ -54,7 +50,7 @@ html {
   }
 }
 
-html[data-theme*="dark"] {
+html[data-theme="dark"] {
   --brand-bg: #000000;
   --brand-text: #ffffff;
   --brand-line: #ffffff;
@@ -65,7 +61,7 @@ html[data-theme*="dark"] {
   --dialog-backdrop: #ffffff22;
 }
 
-html[data-theme*="light"] {
+html[data-theme="light"] {
   --brand-bg: #e0246e;
   --brand-text: #000000;
   --brand-line: #000000;
@@ -76,9 +72,7 @@ html[data-theme*="light"] {
   --dialog-backdrop: #e0246e33;
 }
 
-
-/* MARK: Reset
-*/
+/* MARK: Reset */
 
 *,
 *::before,
@@ -86,9 +80,7 @@ html[data-theme*="light"] {
   box-sizing: border-box;
 }
 
-
-/* MARK: Mobile overflow
-*/
+/* MARK: Mobile overflow */
 
 html,
 body {
@@ -96,9 +88,7 @@ body {
   overflow-x: hidden;
 }
 
-
-/* MARK: Body
-*/
+/* MARK: Body */
 
 body {
   display: grid;
@@ -112,9 +102,7 @@ body {
   font-size: 1.125rem;
 }
 
-
-/* MARK: Skip link
-*/
+/* MARK: Skip link */
 
 .skip-link {
   position: absolute;
@@ -130,9 +118,7 @@ body {
   z-index: 1000;
 }
 
-
-/* MARK: Header
-*/
+/* MARK: Header */
 
 header {
   display: grid;
@@ -151,9 +137,7 @@ header h1 {
   text-align: center;
 }
 
-
-/* MARK: Header top
-*/
+/* MARK: Header top */
 
 .header-top {
   display: flex;
@@ -163,9 +147,7 @@ header h1 {
   width: 100%;
 }
 
-
-/* MARK: Thema toggle
-*/
+/* MARK: Thema toggle */
 
 .theme-toggle {
   position: absolute;
@@ -200,9 +182,7 @@ header h1 {
   transform: translateY(-50%) scale(0.95);
 }
 
-
-/* MARK: Nav
-*/
+/* MARK: Nav */
 
 header nav {
   width: 100%;
@@ -229,15 +209,12 @@ header nav li {
 
 header nav a {
   color: var(--brand-link);
-
   text-decoration: underline;
   text-underline-offset: 0.2rem;
   text-decoration-thickness: 0.1rem;
 }
 
-
-/* MARK: Navigatie hover
-*/
+/* MARK: Navigatie hover */
 
 header nav a:hover,
 header nav a:focus-visible {
@@ -250,9 +227,7 @@ header nav a:active {
   text-decoration: underline;
 }
 
-
-/* MARK: Main
-*/
+/* MARK: Main */
 
 main {
   display: grid;
@@ -260,9 +235,7 @@ main {
   width: 100%;
 }
 
-
-/* MARK: Circle gallery
-*/
+/* MARK: Circle gallery */
 
 .circle-gallery {
   position: relative;
@@ -271,9 +244,7 @@ main {
   margin-top: 3rem;
 }
 
-
-/* MARK: arc tekst (boogje)
-*/
+/* MARK: arc tekst (boogje) */
 
 .arc-text {
   position: absolute;
@@ -293,7 +264,6 @@ main {
   font-family: var(--font-main);
   font-size: 0.46875rem;
   letter-spacing: 0.05rem;
-
   fill: var(--brand-text);
 }
 
@@ -309,9 +279,7 @@ main {
   border: 0;
 }
 
-
-/* MARK: CD
-*/
+/* MARK: CD */
 
 .circle-gallery picture {
   position: absolute;
@@ -326,9 +294,7 @@ main {
   width: 100%;
 }
 
-
-/* MARK: Eigen IMG
-*/
+/* MARK: Eigen IMG */
 
 .img-circle img {
   position: absolute;
@@ -341,68 +307,55 @@ main {
   border-radius: var(--radius-s);
 }
 
-
-/* MARK: Miso XG
-*/
+/* MARK: Miso XG */
 
 .img-circle img:nth-child(1) {
   transform: translate(0, -7rem);
 }
 
-/* MARK: Cubaanse danser
-*/
+/* MARK: Cubaanse danser */
 
 .img-circle img:nth-child(2) {
   transform: translate(4.95rem, -4.95rem);
 }
 
-/* MARK: Miso Embassade
-*/
+/* MARK: Miso Embassade */
 
 .img-circle img:nth-child(3) {
   transform: translate(7rem, 0);
 }
 
-/* MARK: Drummer
-*/
+/* MARK: Drummer */
 
 .img-circle img:nth-child(4) {
   transform: translate(4.95rem, 4.95rem);
 }
 
-/* MARK: Vogel
-*/
+/* MARK: Vogel */
 
 .img-circle img:nth-child(5) {
   transform: translate(0, 7rem);
 }
 
-/* MARK: Miso op de Dam
-*/
+/* MARK: Miso op de Dam */
 
 .img-circle img:nth-child(6) {
   transform: translate(-4.95rem, 4.95rem);
 }
 
-
-/* MARK: Miso Gnarly
-*/
+/* MARK: Miso Gnarly */
 
 .img-circle img:nth-child(7) {
   transform: translate(-7rem, 0);
 }
 
-
-/* MARK: Cuba vlag
-*/
+/* MARK: Cuba vlag */
 
 .img-circle img:nth-child(8) {
   transform: translate(-4.95rem, -4.95rem);
 }
 
-
-/* MARK: Button
-*/
+/* MARK: Button */
 
 .center-btn {
   position: absolute;
@@ -417,7 +370,6 @@ main {
   border-radius: 50%;
   font-family: var(--font-script);
   font-size: 1.5rem;
-
   cursor: pointer;
 }
 
@@ -434,9 +386,7 @@ main {
   transform: translate(-50%, -50%) scale(0.95);
 }
 
-
-/* MARK: Footer
-*/
+/* MARK: Footer */
 
 footer {
   padding-bottom: var(--whitespace-s);
@@ -446,9 +396,7 @@ footer p {
   margin: 0;
 }
 
-
-/* MARK: Cookie dialog
-*/
+/* MARK: Cookie dialog */
 
 .cookie-dialog {
   width: min(90%, 35rem);
@@ -462,27 +410,20 @@ footer p {
   text-align: center;
 }
 
-
-/* MARK: Cookie blur
-*/
+/* MARK: Cookie blur */
 
 .cookie-dialog::backdrop {
   background-color: var(--dialog-backdrop);
-
   backdrop-filter: blur(6px);
 }
 
-
-/* MARK: Cookie content
-*/
+/* MARK: Cookie content */
 
 .cookie-content {
   padding: 1.5rem;
 }
 
-
-/* MARK: Cookie dialog
-*/
+/* MARK: Cookie dialog */
 
 .cookie-dialog h2 {
   margin: 0 0 1rem;
@@ -494,7 +435,6 @@ footer p {
 
 .cookie-dialog p {
   margin: 0 0 1.5rem;
-
   line-height: 1.5;
 }
 
@@ -518,11 +458,6 @@ footer p {
 .cookie-dialog button:hover {
   background: var(--brand-accent);
   color: var(--brand-text);
-  
-.cookie-dialog button[value="accept"]:hover {
-  outline: none;
-}
-
 }
 
 .cookie-dialog button:focus-visible {
@@ -534,13 +469,13 @@ footer p {
   transform: scale(0.95);
 }
 
-
 /* MARK: Cookie settings button */
 
 #cookie-settings {
   background: var(--brand-bg);
   color: var(--brand-text);
   border: var(--border-thin) solid var(--brand-line);
+  border-radius: 0.75rem;
   padding: var(--whitespace-xs) var(--whitespace-s);
   font-family: var(--font-main);
   font-size: 1rem;
@@ -552,15 +487,11 @@ footer p {
   color: var(--brand-btn-bg);
 }
 
-
-
-/* MARK: Cookie dialog mobile
-*/
+/* MARK: Cookie dialog mobile */
 
 @media (max-width: 44.999rem) {
   .cookie-dialog {
     width: calc(100% - 4rem);
-
     box-shadow: 0.3rem 0.3rem 0 var(--brand-line);
   }
 
@@ -586,9 +517,7 @@ footer p {
   }
 }
 
-
-/* MARK: Mobile navigatie
-*/
+/* MARK: Mobile navigatie */
 
 @media (max-width: 44.999rem) {
   header nav {
@@ -602,22 +531,18 @@ footer p {
   }
 }
 
-
-/* MARK: Desktop
-*/
+/* MARK: Desktop */
 
 @media (min-width: 45rem) {
   .circle-gallery {
     width: 37rem;
     height: 37rem;
-
     margin-top: 4rem;
   }
 
   .img-circle img {
     width: 10rem;
     height: 7.5rem;
-
     margin: -3.75rem 0 0 -5rem;
   }
 
@@ -660,9 +585,7 @@ footer p {
   }
 }
 
-
-/* MARK: Afbeeldingen CSS
-*/
+/* MARK: Afbeeldingen CSS */
 
 .image-grid {
   display: grid;
@@ -679,9 +602,7 @@ footer p {
   border-radius: var(--radius-s);
 }
 
-
-/* MARK: Afbeeldingen desktop
-*/
+/* MARK: Afbeeldingen desktop */
 
 @media (min-width: 45rem) {
   .image-grid {
@@ -689,15 +610,11 @@ footer p {
   }
 }
 
-
-/* MARK: Foto's draaien
-*/
+/* MARK: Foto's draaien */
 
 .img-circle {
   position: absolute;
-
   inset: 0;
-
   width: 100%;
   height: 100%;
 }
@@ -716,9 +633,7 @@ footer p {
   }
 }
 
-
-/* MARK: Reduced motion
-*/
+/* MARK: Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
   .img-circle.draaien {
@@ -726,8 +641,7 @@ footer p {
   }
 }
 
-/* MARK: Links pagina
-*/
+/* MARK: Links pagina */
 
 main section:has(article) {
   width: 100%;
@@ -743,7 +657,7 @@ main section:has(article) h2 {
   font-weight: 400;
 }
 
-main section:has(article) > div {
+main section:has(article) * > div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -770,11 +684,7 @@ main section:has(article) article a:hover {
 }
 
 @media (max-width: 45rem) {
-  main section:has(article) > div {
+  main section:has(article) * > div {
     grid-template-columns: 1fr;
   }
-  
-  #cookie-settings {
-  border-radius: 0.75rem;
-}
 }
