@@ -1,5 +1,6 @@
 /* MARK: Font
 */
+
 @font-face {
   font-family: "Yellowtail";
   src: url("../Yellowtail-Regular.ttf") format("truetype");
@@ -7,6 +8,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 
 /* MARK: theme light
 */
@@ -35,6 +37,7 @@ html {
   font-size: 100%;
 }
 
+
 /* MARK: theme dark
 */
 
@@ -51,7 +54,7 @@ html {
   }
 }
 
-html[data-theme="dark"] {
+html[data-theme*="dark"] {
   --brand-bg: #000000;
   --brand-text: #ffffff;
   --brand-line: #ffffff;
@@ -62,7 +65,7 @@ html[data-theme="dark"] {
   --dialog-backdrop: #ffffff22;
 }
 
-html[data-theme="light"] {
+html[data-theme*="light"] {
   --brand-bg: #e0246e;
   --brand-text: #000000;
   --brand-line: #000000;
@@ -73,6 +76,7 @@ html[data-theme="light"] {
   --dialog-backdrop: #e0246e33;
 }
 
+
 /* MARK: Reset
 */
 
@@ -81,6 +85,7 @@ html[data-theme="light"] {
 *::after {
   box-sizing: border-box;
 }
+
 
 /* MARK: Mobile overflow
 */
@@ -91,6 +96,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* MARK: Body
 */
 
@@ -98,16 +104,14 @@ body {
   display: grid;
   justify-items: center;
   gap: var(--whitespace-m);
-
   margin: 0;
   min-height: 100vh;
-
   background: var(--brand-bg);
   color: var(--brand-text);
-
   font-family: var(--font-main);
   font-size: 1.125rem;
 }
+
 
 /* MARK: Skip link
 */
@@ -115,9 +119,7 @@ body {
 .skip-link {
   position: absolute;
   left: -9999px;
-
   padding: 0.5rem 1rem;
-
   background: var(--brand-btn-bg);
   color: var(--brand-btn-text);
 }
@@ -128,6 +130,7 @@ body {
   z-index: 1000;
 }
 
+
 /* MARK: Header
 */
 
@@ -135,20 +138,19 @@ header {
   display: grid;
   justify-items: center;
   gap: var(--whitespace-s);
-
   width: 100%;
   padding: var(--whitespace-s) var(--whitespace-s) 0;
 }
 
 header h1 {
   margin: 0;
-
   font-family: var(--font-script);
   font-size: 4rem;
   font-weight: 400;
   line-height: 1;
   text-align: center;
 }
+
 
 /* MARK: Header top
 */
@@ -157,44 +159,36 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-
   position: relative;
   width: 100%;
 }
+
 
 /* MARK: Thema toggle
 */
 
 .theme-toggle {
   position: absolute;
-
-  top: 5%;
+  top: 50%;
   right: 0.5rem;
-
   width: 3.5rem;
   height: 3.5rem;
-
   padding: 0;
-
-  transform: translateY(-5%);
-
+  transform: translateY(-50%);
   background: none;
   border: none;
-
   cursor: pointer;
 }
 
 .theme-toggle img {
   display: block;
-
   width: 100%;
   height: 100%;
-
   object-fit: contain;
 }
 
 .theme-toggle:hover {
-  transform: translateY(-5%) scale(1.1);
+  transform: translateY(-50%) scale(1.1);
 }
 
 .theme-toggle:focus-visible {
@@ -203,17 +197,16 @@ header h1 {
 }
 
 .theme-toggle:active {
-  transform: translateY(-5%) scale(0.95);
+  transform: translateY(-50%) scale(0.95);
 }
+
 
 /* MARK: Nav
 */
 
 header nav {
   width: 100%;
-
   padding: var(--whitespace-xs) var(--whitespace-m);
-
   border-top: var(--border-thin) solid var(--brand-line);
   border-bottom: var(--border-thin) solid var(--brand-line);
 }
@@ -222,13 +215,10 @@ header nav ul {
   display: flex;
   justify-content: space-between;
   gap: var(--whitespace-s);
-
   width: 100%;
   max-width: 60rem;
-
   margin: 0 auto;
   padding: 0;
-
   list-style: none;
 }
 
@@ -245,6 +235,7 @@ header nav a {
   text-decoration-thickness: 0.1rem;
 }
 
+
 /* MARK: Navigatie hover
 */
 
@@ -259,27 +250,27 @@ header nav a:active {
   text-decoration: underline;
 }
 
+
 /* MARK: Main
 */
 
 main {
   display: grid;
   justify-items: center;
-
   width: 100%;
 }
+
 
 /* MARK: Circle gallery
 */
 
 .circle-gallery {
   position: relative;
-
   width: 21rem;
   height: 21rem;
-
   margin-top: 3rem;
 }
+
 
 /* MARK: arc tekst (boogje)
 */
@@ -287,17 +278,14 @@ main {
 .arc-text {
   position: absolute;
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   pointer-events: none;
 }
 
 .arc-text svg {
   width: 100%;
   height: 100%;
-
   overflow: visible;
 }
 
@@ -311,32 +299,25 @@ main {
 
 .visually-hidden {
   position: absolute;
-
   width: 0.0625rem;
   height: 0.0625rem;
-
   padding: 0;
   margin: -0.0625rem;
-
   overflow: hidden;
-
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
-
   border: 0;
 }
+
 
 /* MARK: CD
 */
 
 .circle-gallery picture {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   width: 100%;
-
   transform: translate(-50%, -50%);
 }
 
@@ -345,24 +326,21 @@ main {
   width: 100%;
 }
 
+
 /* MARK: Eigen IMG
 */
 
 .img-circle img {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   width: 6rem;
   height: 4.5rem;
-
   margin: -2.25rem 0 0 -3rem;
-
   object-fit: cover;
-
   border-radius: var(--radius-s);
 }
+
 
 /* MARK: Miso XG
 */
@@ -406,12 +384,14 @@ main {
   transform: translate(-4.95rem, 4.95rem);
 }
 
+
 /* MARK: Miso Gnarly
 */
 
 .img-circle img:nth-child(7) {
   transform: translate(-7rem, 0);
 }
+
 
 /* MARK: Cuba vlag
 */
@@ -420,26 +400,21 @@ main {
   transform: translate(-4.95rem, -4.95rem);
 }
 
+
 /* MARK: Button
 */
 
 .center-btn {
   position: absolute;
-
   top: 50%;
   left: 50%;
-
   width: 6rem;
   height: 3.5rem;
-
   transform: translate(-50%, -50%);
-
   background: var(--brand-btn-bg);
   color: var(--brand-btn-text);
-
   border: 0;
   border-radius: 50%;
-
   font-family: var(--font-script);
   font-size: 1.5rem;
 
@@ -459,6 +434,7 @@ main {
   transform: translate(-50%, -50%) scale(0.95);
 }
 
+
 /* MARK: Footer
 */
 
@@ -470,25 +446,22 @@ footer p {
   margin: 0;
 }
 
+
 /* MARK: Cookie dialog
 */
 
 .cookie-dialog {
   width: min(90%, 35rem);
-
   margin: auto;
   padding: 0;
-
   background: var(--brand-bg);
   color: var(--brand-text);
-
   border: 0.125rem solid var(--brand-line);
   border-radius: 1rem;
-
   box-shadow: 0.5rem 0.5rem 0 var(--brand-line);
-
   text-align: center;
 }
+
 
 /* MARK: Cookie blur
 */
@@ -499,6 +472,7 @@ footer p {
   backdrop-filter: blur(6px);
 }
 
+
 /* MARK: Cookie content
 */
 
@@ -506,14 +480,13 @@ footer p {
   padding: 1.5rem;
 }
 
+
 /* MARK: Cookie dialog
 */
 
 .cookie-dialog h2 {
   margin: 0 0 1rem;
-
   color: var(--brand-text);
-
   font-family: var(--font-script);
   font-size: 2.5rem;
   font-weight: 400;
@@ -533,16 +506,12 @@ footer p {
 
 .cookie-dialog button {
   padding: 0.6rem 1.5rem;
-
   background: var(--brand-btn-bg);
   color: var(--brand-btn-text);
-
   border: 0.0625rem solid var(--brand-line);
   border-radius: 0.5rem;
-
   font-family: var(--font-main);
   font-size: 1rem;
-
   cursor: pointer;
 }
 
@@ -559,6 +528,7 @@ footer p {
 .cookie-dialog button:active {
   transform: scale(0.95);
 }
+
 
 /* MARK: Cookie dialog mobile
 */
@@ -592,6 +562,7 @@ footer p {
   }
 }
 
+
 /* MARK: Mobile navigatie
 */
 
@@ -606,6 +577,7 @@ footer p {
     gap: 0.75rem;
   }
 }
+
 
 /* MARK: Desktop
 */
@@ -660,35 +632,29 @@ footer p {
   .center-btn {
     width: 8rem;
     height: 4.5rem;
-
     font-size: 2rem;
   }
 }
+
 
 /* MARK: Afbeeldingen CSS
 */
 
 .image-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
-
   gap: 1rem;
-
   width: min(90%, 50rem);
-
   margin: 2rem auto;
 }
 
 .image-grid img {
   width: 100%;
-
   aspect-ratio: 1;
-
   object-fit: cover;
-
   border-radius: var(--radius-s);
 }
+
 
 /* MARK: Afbeeldingen desktop
 */
@@ -698,6 +664,7 @@ footer p {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
 
 /* MARK: Foto's draaien
 */
@@ -725,11 +692,61 @@ footer p {
   }
 }
 
+
 /* MARK: Reduced motion
 */
 
 @media (prefers-reduced-motion: reduce) {
   .img-circle.draaien {
     animation: none;
+  }
+}
+
+/* MARK: Links pagina
+*/
+
+main section:has(article) {
+  width: 100%;
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+main section:has(article) h2 {
+  font-family: var(--font-script);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+main section:has(article) > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 35px;
+}
+
+main section:has(article) article {
+  padding: 30px 20px;
+  border: 1px solid var(--brand-line);
+  border-radius: 15px;
+}
+
+main section:has(article) article p {
+  line-height: 1.5;
+}
+
+main section:has(article) article a {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+main section:has(article) article a:hover {
+  color: var(--brand-accent);
+}
+
+@media (max-width: 45rem) {
+  main section:has(article) > div {
+    grid-template-columns: 1fr;
   }
 }
