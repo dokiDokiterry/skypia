@@ -1,123 +1,61 @@
+
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Teresa">
   <meta name="color-scheme" content="light dark">
-
   <title>SKYPIA</title>
-
   <link rel="stylesheet" href="./assets/style/normal.css">
 </head>
-
 <body>
-
-  <a class="skip-link" href="#main-content">
-    Ga naar inhoud
-  </a>
+  <a class="skip-link" href="#main-content">Ga naar inhoud</a>
 
   <dialog class="cookie-dialog">
-
     <div class="cookie-content">
-
-      <h2>Cookies komen er altijd bij...</h2>
-
+      <h2>Koekjes voordat je een kijkje neemt</h2>
       <p>
-        teresaarchive.nl gebruikt cookies. Deze website maakt ook gebruik
-        van een externe component van Digitaal Tuintje. Wanneer cookies
-        worden geaccepteerd, kan informatie worden verzonden naar
-        digitaaltuintje.nl. Wil je de cookies accepteren?
+        Welkom bij TeresaArchives! Dit is mijn persoonlijke website met mijn Digital Garden, afbeeldingen, links en andere dingen die ik graag wil delen. De website wordt gehost en weergegeven via GitHub en digitaltuintje.nl. Hierbij kunnen technische gegevens worden verwerkt die nodig zijn om de website goed te laten werken.
+        Je kunt hieronder aangeven of je cookies wilt accepteren of weigeren. Je keuze wordt opgeslagen, maar je kunt je cookie-instellingen altijd opnieuw openen via het menu van de website.
       </p>
 
       <form method="dialog">
-
-        <button type="submit">
-          Accept
-        </button>
-
-        <button type="submit">
-          Reject
-        </button>
-
+        <button type="submit">Accepteer</button>
+        <button type="submit">Weigeren</button>
       </form>
-
     </div>
-
   </dialog>
 
   <header>
-
     <div class="header-top">
-
       <h1>teresaarchive</h1>
-
       <button class="theme-toggle" type="button">
-        <img
-          src="assets/fotos/dans-dark.png"
-          alt="Thema toggle"
-        >
+        <img src="assets/fotos/dans-dark.png" alt="Thema toggle">
       </button>
-
     </div>
 
     <nav>
       <ul>
-
+        <li><a href="index.html">Home</a></li>
         <li>
-          <a href="index.html">Home</a>
+          <a href="https://github.com/dokiDokiterry/skypia/blob/main/README.md">Readme</a>
         </li>
-
-        <li>
-          <a href="https://github.com/dokiDokiterry/skypia/blob/main/README.md">
-            Readme
-          </a>
-        </li>
-
-        <li>
-          <a href="links.html">Links</a>
-        </li>
-        
-        <li>
-          <a href="freezing.html">Song</a>
-        </li>
-
-        <li>
-          <a href="afbeeldingen.html">Mijn imgs</a>
-        </li>
-
-        <li>
-          <a href="aboutme.html">About me</a>
-        </li>
-
+        <li><a href="links.html">Links</a></li>
+        <li><a href="freezing.html">Song</a></li>
+        <li><a href="afbeeldingen.html">Mijn imgs</a></li>
+        <li><a href="aboutme.html">About me</a></li>
       </ul>
     </nav>
-
   </header>
 
   <main id="main-content">
-
     <section class="circle-gallery">
-
-      <h2 class="visually-hidden">
-        Neem een kijkje in mijn skypia
-      </h2>
+      <h2 class="visually-hidden">Neem een kijkje in mijn skypia</h2>
 
       <picture>
-
-        <source
-          id="dark-cd"
-          srcset="assets/fotos/pinkcd.png"
-          media="not all"
-        >
-
-        <img
-          id="plaat"
-          src="assets/fotos/plaat.png"
-          alt="CD"
-        >
-
+        <source id="dark-cd" srcset="assets/fotos/pinkcd.png" media="not all">
+        <img id="plaat" src="assets/fotos/plaat.png" alt="CD">
       </picture>
 
       <!--
@@ -126,91 +64,38 @@
         te bepalen. Ik heb de code daarna gebruikt en aangepast
         voor mijn eigen ontwerp.
       -->
-
       <div class="arc-text">
-
         <svg viewBox="0 0 100 100">
-
-          <path
-            id="boog"
-            d="M -4 50 A 54 54 0 0 1 104 50"
-            fill="none"
-          ></path>
-
+          <path id="boog" d="M -4 50 A 54 54 0 0 1 104 50" fill="none"></path>
           <text>
-
-            <textPath
-              href="#boog"
-              startOffset="50%"
-              text-anchor="middle"
-            >
+            <textPath href="#boog" startOffset="50%" text-anchor="middle">
               Neem een kijkje in mijn skypia
             </textPath>
-
           </text>
-
         </svg>
-
       </div>
 
       <div class="img-circle">
-
-        <img
-          src="assets/fotos/misoxg.jpeg"
-          alt="Miso XG dans cover foto"
-        >
-
-        <img
-          src="assets/fotos/danssfeer.jpeg"
-          alt="Foto van Cubaanse danseres"
-        >
-
-        <img
-          src="assets/fotos/misoembassey.jpeg"
-          alt="Foto van Miso tijdens een optreden bij het ambassade festival in Den Haag"
-        >
-
-        <img
-          src="assets/fotos/drum.jpeg"
-          alt="Foto van een drummer"
-        >
-
-        <img
-          src="assets/fotos/freebird.jpg"
-          alt="Foto van een vrijheidsvogel"
-        >
-
-        <img
-          src="assets/fotos/misoblush.jpeg"
-          alt="Foto van Miso Blush dans cover op de Dam"
-        >
-
-        <img
-          src="assets/fotos/gnarly.jpg"
-          alt="Miso Gnarly dans cover foto"
-        >
-
-        <img
-          src="assets/fotos/cubavlag.jpeg"
-          alt="Foto van de Cubaanse vlag"
-        >
-
+        <img src="assets/fotos/misoxg.jpeg" alt="Miso XG dans cover foto">
+        <img src="assets/fotos/danssfeer.jpeg" alt="Foto van Cubaanse danseres">
+        <img src="assets/fotos/misoembassey.jpeg" alt="Foto van Miso tijdens een optreden bij het ambassade festival in Den Haag">
+        <img src="assets/fotos/drum.jpeg" alt="Foto van een drummer">
+        <img src="assets/fotos/freebird.jpg" alt="Foto van een vrijheidsvogel">
+        <img src="assets/fotos/misoblush.jpeg" alt="Foto van Miso Blush dans cover op de Dam">
+        <img src="assets/fotos/gnarly.jpg" alt="Miso Gnarly dans cover foto">
+        <img src="assets/fotos/cubavlag.jpeg" alt="Foto van de Cubaanse vlag">
       </div>
 
-      <button class="center-btn" type="button">
-        Click me
-      </button>
-
+      <button class="center-btn" type="button">Click me</button>
     </section>
-
   </main>
 
+  <button type="button" id="cookie-settings">Cookie-instellingen</button>
+
   <footer>
-    <p>teresaarchive</p>
+    <p>@teresaarchive</p>
   </footer>
 
   <script src="assets/script/theme.js"></script>
-
 </body>
-
 </html>

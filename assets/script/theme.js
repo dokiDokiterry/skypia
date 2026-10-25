@@ -47,9 +47,19 @@ themeToggle.addEventListener("click", function () {
 */
 
 const cookieDialog = document.querySelector(".cookie-dialog");
+const cookieButton = document.querySelector("#cookie-settings");
+const cookieChoice = localStorage.getItem("cookieChoice");
 
-if (cookieDialog && !cookieDialog.open) {
+if (cookieDialog && !cookieChoice) {
   cookieDialog.showModal();
+}
+
+if (cookieButton && cookieDialog) {
+  cookieButton.addEventListener("click", function () {
+    if (!cookieDialog.open) {
+      cookieDialog.showModal();
+    }
+  });
 }
 
 /* MARK: Foto's draaien

@@ -518,6 +518,11 @@ footer p {
 .cookie-dialog button:hover {
   background: var(--brand-accent);
   color: var(--brand-text);
+  
+.cookie-dialog button[value="accept"]:hover {
+  outline: none;
+}
+
 }
 
 .cookie-dialog button:focus-visible {
@@ -528,6 +533,25 @@ footer p {
 .cookie-dialog button:active {
   transform: scale(0.95);
 }
+
+
+/* MARK: Cookie settings button */
+
+#cookie-settings {
+  background: var(--brand-bg);
+  color: var(--brand-text);
+  border: var(--border-thin) solid var(--brand-line);
+  padding: var(--whitespace-xs) var(--whitespace-s);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#cookie-settings:hover {
+  background: var(--brand-accent);
+  color: var(--brand-btn-bg);
+}
+
 
 
 /* MARK: Cookie dialog mobile
@@ -749,4 +773,8 @@ main section:has(article) article a:hover {
   main section:has(article) > div {
     grid-template-columns: 1fr;
   }
+  
+  #cookie-settings {
+  border-radius: 0.75rem;
+}
 }
