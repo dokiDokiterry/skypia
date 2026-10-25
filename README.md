@@ -1,4 +1,4 @@
-# Learning Log - Teres
+# Learning Log - Teresa
 Volgorde en goede uitleg tekst is nog in werking....
 
 ## 30 sep - Toegankelijkheid en WCAG
